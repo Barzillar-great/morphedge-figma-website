@@ -4,7 +4,7 @@
 },
   "description": "MorphEdge Brand Solutions specialises in event consultancy, business development, brand strategy, and creative productions. Transforming Visions, Shaping Futures.",
   "robots": {
-    "index": false
+    "index": true
   },
   "accessibility": {
     "addBypassLinks": false,
