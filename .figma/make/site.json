@@ -1,5 +1,8 @@
-{
-  "description": "Delivers an interactive, visually rich homepage prototype showcasing MorphEdge's premium consultancy services with elegant design and seamless user engagement.",
+{"title": "MorphEdge | Transforming Visions, Shaping Futures",
+"icons": {
+  "icon": "/morph-icon.svg"
+},
+  "description": "MorphEdge Brand Solutions specialises in event consultancy, business development, brand strategy, and creative productions. Transforming Visions, Shaping Futures.",
   "robots": {
     "index": false
   },
