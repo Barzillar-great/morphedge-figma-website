@@ -903,6 +903,60 @@ function MorphEdgeHomePage() {
               </a>
             </div>
           </div>
+
+          <div className="founder-section">
+            <figure className="founder-portrait" data-reveal>
+              <img
+                src="/assets/barzillar-victor-eliathah.jpg"
+                alt="Barzillar Victor Eliathah, founder of MorphEdge Brand Solutions"
+                loading="lazy"
+              />
+            </figure>
+
+            <div className="founder-biography" data-reveal>
+              <p className="eyebrow eyebrow--dark">Meet the Founder</p>
+              <h3>Barzillar Victor Eliathah</h3>
+              <p className="founder-role">Founder, MorphEdge Brand Solutions</p>
+
+              <div className="founder-copy">
+                <p>
+                  Barzillar Victor Eliathah is a forward-thinking brand
+                  strategist, storyteller and creative entrepreneur passionate
+                  about building businesses, shaping culture and creating
+                  lasting impact.
+                </p>
+                <p>
+                  With a background in marketing and brand strategy, his
+                  professional experience spans businesses across Africa, Europe
+                  and international markets. His strategic contributions have
+                  supported business growth, market expansion and stronger
+                  commercial positioning, including initiatives associated with
+                  an eightfold increase in business valuation, from $50,000 to
+                  $400,000.
+                </p>
+                <p>
+                  He founded MorphEdge Brand Solutions with a vision that
+                  extends beyond conventional creative services: to build a
+                  strategic partner for businesses, startups and emerging
+                  ventures seeking to scale, unlock opportunities and establish
+                  lasting market relevance.
+                </p>
+                <p>
+                  That vision also inspired{" "}
+                  <strong>Futures by Design (FBD)</strong>, a community-driven
+                  initiative bringing together professionals, creatives and
+                  forward-thinkers to collaborate, exchange ideas and develop
+                  products and experiences that shape culture.
+                </p>
+                <p>
+                  At the heart of his work is a genuine desire to help people
+                  succeed, challenge conventional thinking and transform
+                  ambitious ideas into meaningful outcomes.
+                </p>
+              </div>
+
+            </div>
+          </div>
         </section>
 
         <section className="expertise" id="expertise">

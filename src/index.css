@@ -689,6 +689,94 @@ button:hover .arrow--diagonal {
   border-bottom: 1px solid var(--gold);
 }
 
+.founder-section {
+  margin-top: clamp(120px, 14vw, 210px);
+  padding-top: clamp(70px, 8vw, 115px);
+  display: grid;
+  grid-template-columns: minmax(300px, 0.88fr) minmax(0, 1.12fr);
+  gap: clamp(55px, 8vw, 125px);
+  align-items: start;
+  border-top: 1px solid var(--line-light);
+}
+
+.founder-portrait {
+  position: relative;
+  margin: 0;
+  background: var(--green-deep);
+  box-shadow: 0 28px 65px rgba(0, 34, 35, 0.14);
+}
+
+.founder-portrait::after {
+  content: "";
+  position: absolute;
+  right: -14px;
+  bottom: -14px;
+  width: 38%;
+  height: 38%;
+  border-right: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
+  pointer-events: none;
+}
+
+.founder-portrait img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.founder-biography {
+  padding-top: 12px;
+}
+
+.founder-biography h3 {
+  max-width: 720px;
+  margin: 23px 0 12px;
+  color: var(--green);
+  font-size: var(--type-display-md);
+  font-weight: 700;
+  letter-spacing: var(--tracking-display);
+  line-height: 1.03;
+}
+
+.founder-role {
+  margin: 0 0 40px;
+  color: #8b6b2c;
+  font-size: var(--type-body);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.founder-copy {
+  max-width: 720px;
+  padding-top: 34px;
+  border-top: 1px solid var(--line-light);
+  color: rgba(0, 34, 35, 0.69);
+  font-size: var(--type-body);
+  line-height: 1.78;
+}
+
+.founder-copy p {
+  margin: 0 0 22px;
+}
+
+.founder-copy strong {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.founder-statement {
+  max-width: 650px;
+  margin: 42px 0 0;
+  padding: 23px 0 23px 25px;
+  border-left: 2px solid var(--gold);
+  color: var(--green);
+  font-size: var(--type-subheading);
+  font-weight: 700;
+  letter-spacing: var(--tracking-heading);
+  line-height: 1.4;
+}
+
 .expertise,
 .principles {
   padding: 110px var(--page-pad) 130px;
@@ -1007,12 +1095,13 @@ button:hover .arrow--diagonal {
 }
 
 .work-image--primary img {
-  object-position: center top;
+  object-fit: contain;
+  object-position: center;
   animation: fbd-poster-reveal 0.45s ease both;
 }
 
 .work-image--primary:hover img {
-  transform: scale(1.025);
+  transform: none;
 }
 
 .work-image--peek {
@@ -1035,11 +1124,12 @@ button:hover .arrow--diagonal {
 }
 
 .work-image--peek img {
-  object-position: top;
+  object-fit: contain;
+  object-position: center;
 }
 
 .work-image--peek:hover img {
-  transform: scale(1.06);
+  transform: none;
 }
 
 .work-image--peek > span {
@@ -2266,6 +2356,11 @@ button:hover .arrow--diagonal {
     gap: 20px;
   }
 
+  .founder-section {
+    grid-template-columns: minmax(260px, 0.78fr) minmax(0, 1.22fr);
+    gap: 42px;
+  }
+
   .section-top {
     grid-template-columns: 1fr;
     gap: 35px;
@@ -2485,6 +2580,29 @@ button:hover .arrow--diagonal {
     font-size: 1.375rem;
   }
 
+  .founder-section {
+    margin-top: 100px;
+    padding-top: 70px;
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .founder-portrait {
+    width: min(100%, 540px);
+  }
+
+  .founder-biography {
+    padding-top: 0;
+  }
+
+  .founder-biography h3 {
+    font-size: clamp(2.75rem, 11vw, 3.4rem);
+  }
+
+  .founder-statement {
+    font-size: 1.25rem;
+  }
+
   .section-top {
     margin-bottom: 55px;
   }
@@ -2531,17 +2649,46 @@ button:hover .arrow--diagonal {
   }
 
   .work-gallery {
-    height: 550px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 22px;
   }
 
   .work-image--primary {
-    width: 87%;
-    height: 510px;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .work-image--primary img {
+    width: 100%;
+    height: auto;
   }
 
   .work-image--peek {
-    width: 42%;
-    height: 230px;
+    position: relative;
+    width: 62%;
+    height: auto;
+    display: grid;
+    grid-template-rows: auto auto;
+    border-width: 6px;
+  }
+
+  .work-image--peek::after {
+    display: none;
+  }
+
+  .work-image--peek img {
+    width: 100%;
+    height: auto;
+  }
+
+  .work-image--peek > span {
+    position: static;
+    padding: 13px 14px;
+    background: var(--green-deep);
   }
 
   .portfolio-expansion {
